@@ -16,7 +16,7 @@
   4: 236 = TODO
   5: 260 = TODO
   6: 808 = TODO
-  7: 3401036878 = (ts^0x18)>>1??????
+  7: 3401036878 = TODO, has to do with ts it seems
 }
 16: {"ApfYs27OeqO_7u_-0poFgGPMp"} = hash calculated earlier, const; I think I saw AonA5lMAipOb79vijCaYW5VMA?
 17: 3401036926 = ts<<1
@@ -34,7 +34,7 @@
 }
 25: 8 = TODO 
 26: {
-  1: 2 = const (3rd hashed string + shift left 1?)
+  1: 2 = ? (3rd hashed string + shift left 1?)
   2: {`2aeaf2b21afa5009709e793c`} = hash from line 100/line 142 manipulation
 }
 28: 1008 = const
