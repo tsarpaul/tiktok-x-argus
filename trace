@@ -1,0 +1,5 @@
+#!/bin/sh
+pid=$(adb shell ps -A | grep musically | awk -F ' ' '{print $2}' | head -n 1)
+echo "frida-trace -U -p$pid $@"
+frida-trace -U -p$pid $@
+# print all arguments with echo

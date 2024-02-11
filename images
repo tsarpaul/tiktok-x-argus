@@ -1,0 +1,278 @@
+[  0] AC5AE111-889D-8B83-AAC9-EF040807A1BC 0x0000005d97127000 /home/polka/.lldb/module_cache/remote-android/.cache/AC5AE111-889D-8B83-AAC9-EF040807A1BC/app_process64 
+[  1] CF1E6ABC 0x0000007aa652d000 [vdso] (0x0000007aa652d000)
+[  2] 00983E1F-D8B1-A3BE-7C6C-123162722E4D 0x0000007aa63d9000 /home/polka/.lldb/module_cache/remote-android/.cache/00983E1F-D8B1-A3BE-7C6C-123162722E4D/linker64 
+[  3] 3AC2926C-5D5C-5ACB-17C9-CD40D030BB0A 0x0000007aa4c50000 /home/polka/.lldb/module_cache/remote-android/.cache/3AC2926C-5D5C-5ACB-17C9-CD40D030BB0A/libandroid_runtime.so 
+[  4] F2A857BD-7D0D-EE26-D603-FDABD4D15387 0x0000007aa59c2000 /home/polka/.lldb/module_cache/remote-android/.cache/F2A857BD-7D0D-EE26-D603-FDABD4D15387/libbase.so 
+[  5] 14FABC40-2A4A-AF30-45D4-14B187F126F1 0x0000007aa3d94000 /home/polka/.lldb/module_cache/remote-android/.cache/14FABC40-2A4A-AF30-45D4-14B187F126F1/libbinder.so 
+[  6] 917920FB-0CE0-486F-BDF5-484617B586E6 0x0000007aa044e000 /home/polka/.lldb/module_cache/remote-android/.cache/917920FB-0CE0-486F-BDF5-484617B586E6/libcutils.so 
+[  7] C3589366 0x0000007aa4f10000 /home/polka/.lldb/module_cache/remote-android/.cache/C3589366/libhwbinder.so 
+[  8] 7BDB74DF-833A-CB39-E9AD-7331E28EFE8C 0x0000007aa0747000 /home/polka/.lldb/module_cache/remote-android/.cache/7BDB74DF-833A-CB39-E9AD-7331E28EFE8C/liblog.so 
+[  9] 11C0C95F-6911-D0DE-1EFC-730E0B972EF9 0x0000007aa5548000 /home/polka/.lldb/module_cache/remote-android/.cache/11C0C95F-6911-D0DE-1EFC-730E0B972EF9/libnativeloader.so 
+[ 10] 7DA3D283-1CC8-344E-240B-F4300C8EEF1C 0x0000007aa508d000 /home/polka/.lldb/module_cache/remote-android/.cache/7DA3D283-1CC8-344E-240B-F4300C8EEF1C/libutils.so 
+[ 11] 99CD8C38-B06E-2B9C-16BC-CB0DB1791B8D 0x0000007aa5358000 /home/polka/.lldb/module_cache/remote-android/.cache/99CD8C38-B06E-2B9C-16BC-CB0DB1791B8D/libwilhelm.so 
+[ 12] 80F4168E-4D26-C8E4-E081-E2CD53BDB17C 0x0000007aa0d80000 /home/polka/.lldb/module_cache/remote-android/.cache/80F4168E-4D26-C8E4-E081-E2CD53BDB17C/libc++.so 
+[ 13] 1D4A25C5-C7D4-DC45-0ECF-69DE6F346B81 0x0000007aa27cd000 /home/polka/.lldb/module_cache/remote-android/.cache/1D4A25C5-C7D4-DC45-0ECF-69DE6F346B81/libc.so 
+[ 14] 810D7C00-603C-97DA-DF2F-F21FA38E1CDA 0x0000007aa2708000 /home/polka/.lldb/module_cache/remote-android/.cache/810D7C00-603C-97DA-DF2F-F21FA38E1CDA/libm.so 
+[ 15] FA394DDF-D86F-B8DF-1A57-1C581BA6F75E 0x0000007aa26d8000 /home/polka/.lldb/module_cache/remote-android/.cache/FA394DDF-D86F-B8DF-1A57-1C581BA6F75E/libdl.so 
+[ 16] A355E73D-27C7-8C79-68B9-36C9916AFCAB 0x0000007aa0f80000 /home/polka/.lldb/module_cache/remote-android/.cache/A355E73D-27C7-8C79-68B9-36C9916AFCAB/libbpf.so 
+[ 17] 3914A3B9-04EE-AC30-3495-C943F1D37E4E 0x0000007aa410b000 /home/polka/.lldb/module_cache/remote-android/.cache/3914A3B9-04EE-AC30-3495-C943F1D37E4E/libnetdutils.so 
+[ 18] 13DC14BF-7E4B-13B3-131D-B51D81BEFA64 0x0000007aa4495000 /home/polka/.lldb/module_cache/remote-android/.cache/13DC14BF-7E4B-13B3-131D-B51D81BEFA64/libmemtrack.so 
+[ 19] 9EEEBB6B-7249-8E01-27B6-F5B9F32154F8 0x0000007aa06c0000 /home/polka/.lldb/module_cache/remote-android/.cache/9EEEBB6B-7249-8E01-27B6-F5B9F32154F8/libandroidfw.so 
+[ 20] C8CB39D0-4A2A-7480-318A-F401732CFDB0 0x0000007aa2ed0000 /home/polka/.lldb/module_cache/remote-android/.cache/C8CB39D0-4A2A-7480-318A-F401732CFDB0/libappfuse.so 
+[ 21] 98F6C760-6E45-9C51-8CC6-7637DEE737FB 0x0000007aa098f000 /home/polka/.lldb/module_cache/remote-android/.cache/98F6C760-6E45-9C51-8CC6-7637DEE737FB/libcrypto.so 
+[ 22] AFD8E19C-3462-8A68-9F18-2213A810FD6B 0x0000007aa55db000 /home/polka/.lldb/module_cache/remote-android/.cache/AFD8E19C-3462-8A68-9F18-2213A810FD6B/libnativehelper.so 
+[ 23] B266655E-3590-7C82-C2A1-1E9649867670 0x0000007aa451c000 /home/polka/.lldb/module_cache/remote-android/.cache/B266655E-3590-7C82-C2A1-1E9649867670/libdebuggerd_client.so 
+[ 24] BCB409AE-6F48-CA69-51E6-25FAAB73E22F 0x0000007aa3c04000 /home/polka/.lldb/module_cache/remote-android/.cache/BCB409AE-6F48-CA69-51E6-25FAAB73E22F/libui.so 
+[ 25] 7DE4A749-8E52-1E68-E7A1-05BE1E0F5FC4 0x0000007aa0780000 /home/polka/.lldb/module_cache/remote-android/.cache/7DE4A749-8E52-1E68-E7A1-05BE1E0F5FC4/libgraphicsenv.so 
+[ 26] 045FAA61-F2C2-A5F0-58E0-B1C449DCC04B 0x0000007aa41c1000 /home/polka/.lldb/module_cache/remote-android/.cache/045FAA61-F2C2-A5F0-58E0-B1C449DCC04B/libgui.so 
+[ 27] 7DD8AF7D-13EC-7E74-DB83-F2E39CA83614 0x0000007aa0908000 /home/polka/.lldb/module_cache/remote-android/.cache/7DD8AF7D-13EC-7E74-DB83-F2E39CA83614/libsensor.so 
+[ 28] 29D14933-11AD-76D8-2326-5B23F3455D26 0x0000007aa0c86000 /home/polka/.lldb/module_cache/remote-android/.cache/29D14933-11AD-76D8-2326-5B23F3455D26/libinput.so 
+[ 29] AB87F447 0x0000007aa049a000 /home/polka/.lldb/module_cache/remote-android/.cache/AB87F447/libcamera_client.so 
+[ 30] 23E0D4E9-BD8A-2CB9-4867-0FD14DEB1E0E 0x0000007aa43d9000 /home/polka/.lldb/module_cache/remote-android/.cache/23E0D4E9-BD8A-2CB9-4867-0FD14DEB1E0E/libcamera_metadata.so 
+[ 31] BC659124-7A08-42FF-A54E-2703C7D34250 0x0000007aa53ef000 /home/polka/.lldb/module_cache/remote-android/.cache/BC659124-7A08-42FF-A54E-2703C7D34250/libsqlite.so 
+[ 32] FF69E233-4089-4C72-79F5-A08214F4F97A 0x0000007aa40a9000 /home/polka/.lldb/module_cache/remote-android/.cache/FF69E233-4089-4C72-79F5-A08214F4F97A/libEGL.so 
+[ 33] 2CF4CF7C-96E5-1232-C1D7-F5F9D9091B4B 0x0000007aa2795000 /home/polka/.lldb/module_cache/remote-android/.cache/2CF4CF7C-96E5-1232-C1D7-F5F9D9091B4B/libGLESv1_CM.so 
+[ 34] 15A8E9E5-17F9-761A-09A8-358EF5F41B9F 0x0000007aa1ec6000 /home/polka/.lldb/module_cache/remote-android/.cache/15A8E9E5-17F9-761A-09A8-358EF5F41B9F/libGLESv2.so 
+[ 35] 85D38AA7-2F15-E4A7-38E2-98AEBCFBF6E9 0x0000007aa4c00000 /home/polka/.lldb/module_cache/remote-android/.cache/85D38AA7-2F15-E4A7-38E2-98AEBCFBF6E9/libvulkan.so 
+[ 36] CC1BF9B7 0x0000007aa054f000 /home/polka/.lldb/module_cache/remote-android/.cache/CC1BF9B7/libziparchive.so 
+[ 37] 8F8DAE47-E822-30E5-E104-20350CB8C4DE 0x0000007aa5057000 /home/polka/.lldb/module_cache/remote-android/.cache/8F8DAE47-E822-30E5-E104-20350CB8C4DE/libETC1.so 
+[ 38] C0F3921A-12F8-9754-4F61-C861191488F4 0x0000007aa45d7000 /home/polka/.lldb/module_cache/remote-android/.cache/C0F3921A-12F8-9754-4F61-C861191488F4/libhardware.so 
+[ 39] 8DA67DC1-0968-C606-BF7E-06AB5887E96D 0x0000007aa08cc000 /home/polka/.lldb/module_cache/remote-android/.cache/8DA67DC1-0968-C606-BF7E-06AB5887E96D/libhardware_legacy.so 
+[ 40] 26A446EB-92F1-4E5B-CC0D-D0774E822778 0x0000007aa5a84000 /home/polka/.lldb/module_cache/remote-android/.cache/26A446EB-92F1-4E5B-CC0D-D0774E822778/libselinux.so 
+[ 41] AA000936-456D-48AC-D3A7-00E6ABD50F3E 0x0000007aa3e97000 /home/polka/.lldb/module_cache/remote-android/.cache/AA000936-456D-48AC-D3A7-00E6ABD50F3E/libicuuc.so 
+[ 42] 785D4350 0x0000007aa4f57000 /home/polka/.lldb/module_cache/remote-android/.cache/785D4350/libmedia.so 
+[ 43] A4388590 0x0000007aa47eb000 /home/polka/.lldb/module_cache/remote-android/.cache/A4388590/libmediametrics.so 
+[ 44] FFDD30CB 0x0000007aa0ba4000 /home/polka/.lldb/module_cache/remote-android/.cache/FFDD30CB/libaudioclient.so 
+[ 45] BCA60CA9-960C-9FE1-D4F8-E01047040E38 0x0000007aa50d7000 /home/polka/.lldb/module_cache/remote-android/.cache/BCA60CA9-960C-9FE1-D4F8-E01047040E38/libjpeg.so 
+[ 46] 1F3A4191-2DA5-A10C-FAEA-484D4C147AE0 0x0000007aa5b45000 /home/polka/.lldb/module_cache/remote-android/.cache/1F3A4191-2DA5-A10C-FAEA-484D4C147AE0/libusbhost.so 
+[ 47] 6416D2A1-518E-0F68-5AFE-4ECAAF08C28E 0x0000007aa4307000 /home/polka/.lldb/module_cache/remote-android/.cache/6416D2A1-518E-0F68-5AFE-4ECAAF08C28E/libharfbuzz_ng.so 
+[ 48] 4F8F4B0C-6189-6C2D-2F3F-A7C05BA680C1 0x0000007aa5607000 /home/polka/.lldb/module_cache/remote-android/.cache/4F8F4B0C-6189-6C2D-2F3F-A7C05BA680C1/libz.so 
+[ 49] 124E5B99-DBDF-87E6-61E0-DF08DA2A0379 0x0000007aa2912000 /home/polka/.lldb/module_cache/remote-android/.cache/124E5B99-DBDF-87E6-61E0-DF08DA2A0379/libpdfium.so 
+[ 50] C6915F84 0x0000007aa4153000 /home/polka/.lldb/module_cache/remote-android/.cache/C6915F84/libimg_utils.so 
+[ 51] CFEA3952-FF62-12DC-3BD3-8143329E19F5 0x0000007aa4783000 /home/polka/.lldb/module_cache/remote-android/.cache/CFEA3952-FF62-12DC-3BD3-8143329E19F5/libnetd_client.so 
+[ 52] 4A0B52A4-21A1-CE69-51F6-30F07772163D 0x0000007aa564a000 /home/polka/.lldb/module_cache/remote-android/.cache/4A0B52A4-21A1-CE69-51F6-30F07772163D/libsoundtrigger.so 
+[ 53] B6C2645E 0x0000007aa5c40000 /home/polka/.lldb/module_cache/remote-android/.cache/B6C2645E/libminikin.so 
+[ 54] 93A9B9B2-6BB7-4193-5F28-95DE26F4A149 0x0000007aa041d000 /home/polka/.lldb/module_cache/remote-android/.cache/93A9B9B2-6BB7-4193-5F28-95DE26F4A149/libprocessgroup.so 
+[ 55] 38C98582-AF69-2716-8079-7EE4C2622284 0x0000007aa5296000 /home/polka/.lldb/module_cache/remote-android/.cache/38C98582-AF69-2716-8079-7EE4C2622284/libnativebridge.so 
+[ 56] BFBB85D1-36F2-B6A1-D96A-ADCD79965D5B 0x0000007aa2f31000 /home/polka/.lldb/module_cache/remote-android/.cache/BFBB85D1-36F2-B6A1-D96A-ADCD79965D5B/libmemunreachable.so 
+[ 57] 4E65179D-8E0A-BBB6-2F6A-49C421EABD4F 0x0000007aa0584000 /home/polka/.lldb/module_cache/remote-android/.cache/4E65179D-8E0A-BBB6-2F6A-49C421EABD4F/libhidlbase.so 
+[ 58] EDC07347-9AEA-7C4D-D196-B0CF15891B69 0x0000007aa46c1000 /home/polka/.lldb/module_cache/remote-android/.cache/EDC07347-9AEA-7C4D-D196-B0CF15891B69/libhidltransport.so 
+[ 59] 11C717FE-9BE0-AC47-1487-694B64A3796E 0x0000007aa1192000 /home/polka/.lldb/module_cache/remote-android/.cache/11C717FE-9BE0-AC47-1487-694B64A3796E/libvintf.so 
+[ 60] 127A5A87-ED06-ADDB-70CB-EA91D0DB37D1 0x0000007aa5597000 /home/polka/.lldb/module_cache/remote-android/.cache/127A5A87-ED06-ADDB-70CB-EA91D0DB37D1/libnativewindow.so 
+[ 61] AC401BD8 0x0000007aa14cf000 /home/polka/.lldb/module_cache/remote-android/.cache/AC401BD8/libhwui.so 
+[ 62] 8DB119B2-6189-0F36-5FFF-60202293E562 0x0000007aa2fc7000 /home/polka/.lldb/module_cache/remote-android/.cache/8DB119B2-6189-0F36-5FFF-60202293E562/libstatslog.so 
+[ 63] 84D4D756-D9A4-E56D-046B-01BDA4A0C2F0 0x0000007aa5317000 /home/polka/.lldb/module_cache/remote-android/.cache/84D4D756-D9A4-E56D-046B-01BDA4A0C2F0/libassert_tip_service.so 
+[ 64] C76ABF58-9316-5CD2-06D7-61B4E84D6700 0x0000007aa4593000 /home/polka/.lldb/module_cache/remote-android/.cache/C76ABF58-9316-5CD2-06D7-61B4E84D6700/liboem_jni.so 
+[ 65] 1D19A3C6-22A1-DB07-DDAC-149440C351E8 0x0000007aa1147000 /home/polka/.lldb/module_cache/remote-android/.cache/1D19A3C6-22A1-DB07-DDAC-149440C351E8/libopdiagnose.so 
+[ 66] 815947DE-0C9E-99A6-36FB-3C8C89C32089 0x0000007aa2653000 /home/polka/.lldb/module_cache/remote-android/.cache/815947DE-0C9E-99A6-36FB-3C8C89C32089/libutilscallstack.so 
+[ 67] 7958C851-A75F-6222-AFF3-F78778AB3D07 0x0000007aa5a5f000 /home/polka/.lldb/module_cache/remote-android/.cache/7958C851-A75F-6222-AFF3-F78778AB3D07/libvndksupport.so 
+[ 68] C2680376 0x0000007aa5ac2000 /home/polka/.lldb/module_cache/remote-android/.cache/C2680376/libmedia_omx.so 
+[ 69] F3166E65 0x0000007aa0953000 /home/polka/.lldb/module_cache/remote-android/.cache/F3166E65/libmediaextractor.so 
+[ 70] E1FC4E3C-DAED-7F88-669C-EEB2B5659016 0x0000007aa4749000 /home/polka/.lldb/module_cache/remote-android/.cache/E1FC4E3C-DAED-7F88-669C-EEB2B5659016/libaudiomanager.so 
+[ 71] 21C539E6 0x0000007aa4959000 /home/polka/.lldb/module_cache/remote-android/.cache/21C539E6/libstagefright.so 
+[ 72] 77E2F9A6 0x0000007aa1f29000 /home/polka/.lldb/module_cache/remote-android/.cache/77E2F9A6/libstagefright_foundation.so 
+[ 73] ABEA09D4 0x0000007aa52ee000 /home/polka/.lldb/module_cache/remote-android/.cache/ABEA09D4/libstagefright_http_support.so 
+[ 74] 66755CAB-5664-C6FA-F067-35DB56F5AD4A 0x0000007aa524a000 /home/polka/.lldb/module_cache/remote-android/.cache/66755CAB-5664-C6FA-F067-35DB56F5AD4A/android.hardware.memtrack@1.0.so 
+[ 75] C89ACD6D-45E9-F3C1-AB55-FD3BDD45D587 0x0000007aa5a0e000 /home/polka/.lldb/module_cache/remote-android/.cache/C89ACD6D-45E9-F3C1-AB55-FD3BDD45D587/android.hardware.graphics.allocator@2.0.so 
+[ 76] BEC67703-5A58-C1CA-7A89-837D74145240 0x0000007aa12c7000 /home/polka/.lldb/module_cache/remote-android/.cache/BEC67703-5A58-C1CA-7A89-837D74145240/android.hardware.graphics.common@1.1.so 
+[ 77] 5A9F12DC-F62E-CBBC-59D7-C2F66734E7DF 0x0000007aa598f000 /home/polka/.lldb/module_cache/remote-android/.cache/5A9F12DC-F62E-CBBC-59D7-C2F66734E7DF/android.hardware.graphics.mapper@2.0.so 
+[ 78] 4E025BEF-4C35-6829-134D-171D19E4E3C8 0x0000007aa0807000 /home/polka/.lldb/module_cache/remote-android/.cache/4E025BEF-4C35-6829-134D-171D19E4E3C8/android.hardware.graphics.mapper@2.1.so 
+[ 79] 5ABD2D10-745C-46E9-BDD3-C81C97CBBE08 0x0000007aa4ec6000 /home/polka/.lldb/module_cache/remote-android/.cache/5ABD2D10-745C-46E9-BDD3-C81C97CBBE08/android.hardware.configstore@1.0.so 
+[ 80] EF8523B1-F23F-9539-9206-86CC426A4189 0x0000007aa484c000 /home/polka/.lldb/module_cache/remote-android/.cache/EF8523B1-F23F-9539-9206-86CC426A4189/android.hardware.configstore-utils.so 
+[ 81] AA45B063-1528-E47F-898C-696A1F9767B3 0x0000007aa3bc6000 /home/polka/.lldb/module_cache/remote-android/.cache/AA45B063-1528-E47F-898C-696A1F9767B3/libsync.so 
+[ 82] D41E1730-0063-CA55-02FF-972692BA921F 0x0000007aa42c3000 /home/polka/.lldb/module_cache/remote-android/.cache/D41E1730-0063-CA55-02FF-972692BA921F/libbufferhubqueue.so 
+[ 83] 7B9B5689-D07B-0286-7A66-CE97ECF1A2DA 0x0000007aa0ed0000 /home/polka/.lldb/module_cache/remote-android/.cache/7B9B5689-D07B-0286-7A66-CE97ECF1A2DA/libpdx_default_transport.so 
+[ 84] AD616C62-BA02-7B98-33AA-802D44818F96 0x0000007aa3d40000 /home/polka/.lldb/module_cache/remote-android/.cache/AD616C62-BA02-7B98-33AA-802D44818F96/android.hidl.token@1.0-utils.so 
+[ 85] 9B070F97-73CD-5091-5186-5EABE226F512 0x0000007aa0b18000 /home/polka/.lldb/module_cache/remote-android/.cache/9B070F97-73CD-5091-5186-5EABE226F512/android.hardware.graphics.bufferqueue@1.0.so 
+[ 86] C4CE6F75 0x0000007aa301b000 /home/polka/.lldb/module_cache/remote-android/.cache/C4CE6F75/libclang_rt.ubsan_standalone-aarch64-android.so 
+[ 87] 31636954-2C90-CA1C-C3D6-049D09AE6B33 0x0000007aa56a6000 /home/polka/.lldb/module_cache/remote-android/.cache/31636954-2C90-CA1C-C3D6-049D09AE6B33/libicui18n.so 
+[ 88] 666DB3B5-2293-1031-A120-634F6800E1A6 0x0000007aa4608000 /home/polka/.lldb/module_cache/remote-android/.cache/666DB3B5-2293-1031-A120-634F6800E1A6/libbacktrace.so 
+[ 89] 96E1B2E1-DC16-B910-66E7-42AE5A7AC67F 0x0000007aa3cc4000 /home/polka/.lldb/module_cache/remote-android/.cache/96E1B2E1-DC16-B910-66E7-42AE5A7AC67F/android.hardware.graphics.common@1.0.so 
+[ 90] 2C90916C-7B49-B52F-4FA7-F3E4A2CC9AD1 0x0000007aa51f0000 /home/polka/.lldb/module_cache/remote-android/.cache/2C90916C-7B49-B52F-4FA7-F3E4A2CC9AD1/libpcre2.so 
+[ 91] E99A2DFB-0DA9-B404-D359-66CDB9180166 0x0000007aa4691000 /home/polka/.lldb/module_cache/remote-android/.cache/E99A2DFB-0DA9-B404-D359-66CDB9180166/libpackagelistparser.so 
+[ 92] 0F6B87B2-B200-DF74-7536-0D6E2623DEB5 0x0000007aa0381000 /home/polka/.lldb/module_cache/remote-android/.cache/0F6B87B2-B200-DF74-7536-0D6E2623DEB5/libsonivox.so 
+[ 93] 4FE325D7-7B16-4695-334F-5FBD4CB75B34 0x0000007aa4436000 /home/polka/.lldb/module_cache/remote-android/.cache/4FE325D7-7B16-4695-334F-5FBD4CB75B34/libexpat.so 
+[ 94] 567588D1-FFF6-5713-7A02-8C14F8435D1A 0x0000007aa464c000 /home/polka/.lldb/module_cache/remote-android/.cache/567588D1-FFF6-5713-7A02-8C14F8435D1A/libaudioutils.so 
+[ 95] 596E16EB 0x0000007aa3d05000 /home/polka/.lldb/module_cache/remote-android/.cache/596E16EB/libmedia_helper.so 
+[ 96] A13C4AB9-A412-ECBA-C4CE-B677A8CE2863 0x0000007aa1de5000 /home/polka/.lldb/module_cache/remote-android/.cache/A13C4AB9-A412-ECBA-C4CE-B677A8CE2863/libft2.so 
+[ 97] 24187A2A-791E-BC9C-162F-22C8A7F4A618 0x0000007aa063d000 /home/polka/.lldb/module_cache/remote-android/.cache/24187A2A-791E-BC9C-162F-22C8A7F4A618/libhidl-gen-utils.so 
+[ 98] D062DBEE 0x0000007aa034f000 /home/polka/.lldb/module_cache/remote-android/.cache/D062DBEE/libtinyxml2.so 
+[ 99] 21AC444D-3BB4-CCAC-EEF7-D20D8958E2D6 0x0000007aa1cac000 /home/polka/.lldb/module_cache/remote-android/.cache/21AC444D-3BB4-CCAC-EEF7-D20D8958E2D6/libdng_sdk.so 
+[100] E1A7B8A5 0x0000007aa44dc000 /home/polka/.lldb/module_cache/remote-android/.cache/E1A7B8A5/libheif.so 
+[101] 9E18A4BC-94F3-5411-6AB4-A9E3B19C082E 0x0000007aa0d48000 /home/polka/.lldb/module_cache/remote-android/.cache/9E18A4BC-94F3-5411-6AB4-A9E3B19C082E/libpiex.so 
+[102] 97C4B961-9784-878F-E9B1-6A98BDC596E4 0x0000007aa1254000 /home/polka/.lldb/module_cache/remote-android/.cache/97C4B961-9784-878F-E9B1-6A98BDC596E4/libpng.so 
+[103] FFE682E8-E5DA-263A-6998-5A2592F08907 0x0000007aa48d3000 /home/polka/.lldb/module_cache/remote-android/.cache/FFE682E8-E5DA-263A-6998-5A2592F08907/libprotobuf-cpp-lite.so 
+[104] 7730A593-D30E-BEC5-D334-D5923E0D0ED4 0x0000007aa1349000 /home/polka/.lldb/module_cache/remote-android/.cache/7730A593-D30E-BEC5-D334-D5923E0D0ED4/libRScpp.so 
+[105] 082F10E8-6389-E0F8-F638-FFA437CCD1F1 0x0000007aa1f83000 /home/polka/.lldb/module_cache/remote-android/.cache/082F10E8-6389-E0F8-F638-FFA437CCD1F1/libskiaso.so 
+[106] 4E49C122-DA47-1BC6-3B59-4B32C25BF664 0x0000007aa10c5000 /home/polka/.lldb/module_cache/remote-android/.cache/4E49C122-DA47-1BC6-3B59-4B32C25BF664/android.hardware.media.omx@1.0.so 
+[107] 3FECB8BC-5F58-225A-5C1E-6BA56BF1F589 0x0000007aa0e82000 /home/polka/.lldb/module_cache/remote-android/.cache/3FECB8BC-5F58-225A-5C1E-6BA56BF1F589/libdrmframework.so 
+[108] A42B2F93-E3F1-9A4E-B55C-996FA6009B1C 0x0000007aa089a000 /home/polka/.lldb/module_cache/remote-android/.cache/A42B2F93-E3F1-9A4E-B55C-996FA6009B1C/libion.so 
+[109] 089306B1 0x0000007aa455f000 /home/polka/.lldb/module_cache/remote-android/.cache/089306B1/libmediautils.so 
+[110] DE06DF6E 0x0000007aa3e4d000 /home/polka/.lldb/module_cache/remote-android/.cache/DE06DF6E/libstagefright_codecbase.so 
+[111] 78AA20AB 0x0000007aa4184000 /home/polka/.lldb/module_cache/remote-android/.cache/78AA20AB/libstagefright_omx_utils.so 
+[112] CEFEF506 0x0000007aa2686000 /home/polka/.lldb/module_cache/remote-android/.cache/CEFEF506/libstagefright_xmlparser.so 
+[113] A3849ED4-DFD0-D312-C086-9DB920DC823E 0x0000007aa4897000 /home/polka/.lldb/module_cache/remote-android/.cache/A3849ED4-DFD0-D312-C086-9DB920DC823E/libhidlallocatorutils.so 
+[114] 32BB1058-0140-9BE6-FD05-B9A2B3600F76 0x0000007aa5188000 /home/polka/.lldb/module_cache/remote-android/.cache/32BB1058-0140-9BE6-FD05-B9A2B3600F76/libhidlmemory.so 
+[115] D10A3F0C-E52A-0E7F-04FB-2C8F95D991AD 0x0000007aa3c88000 /home/polka/.lldb/module_cache/remote-android/.cache/D10A3F0C-E52A-0E7F-04FB-2C8F95D991AD/android.hidl.allocator@1.0.so 
+[116] 58E4AAC8-C625-1DEA-F5A4-F7F712DBBDC8 0x0000007aa07c0000 /home/polka/.lldb/module_cache/remote-android/.cache/58E4AAC8-C625-1DEA-F5A4-F7F712DBBDC8/android.hidl.memory@1.0.so 
+[117] ABAF7E86-2689-9109-369E-80880603C184 0x0000007aa2f89000 /home/polka/.lldb/module_cache/remote-android/.cache/ABAF7E86-2689-9109-369E-80880603C184/android.hardware.cas.native@1.0.so 
+[118] 80C7E2EB-0FDD-45A8-6C41-AF23D4961580 0x0000007aa4811000 /home/polka/.lldb/module_cache/remote-android/.cache/80C7E2EB-0FDD-45A8-6C41-AF23D4961580/android.hardware.configstore@1.1.so 
+[119] D201F4BE-FC32-D7AC-0E71-F2B30302BBDE 0x0000007aa5950000 /home/polka/.lldb/module_cache/remote-android/.cache/D201F4BE-FC32-D7AC-0E71-F2B30302BBDE/android.hidl.token@1.0.so 
+[120] B15FEBDF-3953-D805-4387-BD62777D2C53 0x0000007aa0848000 /home/polka/.lldb/module_cache/remote-android/.cache/B15FEBDF-3953-D805-4387-BD62777D2C53/android.hardware.media@1.0.so 
+[121] 56FFBEB6-F912-44B7-C220-828B365DFBDB 0x0000007aa5b9e000 /home/polka/.lldb/module_cache/remote-android/.cache/56FFBEB6-F912-44B7-C220-828B365DFBDB/libunwind.so 
+[122] 0E07BD0B-9B1F-C8EF-4E72-CD20F7406CD2 0x0000007aa0fc7000 /home/polka/.lldb/module_cache/remote-android/.cache/0E07BD0B-9B1F-C8EF-4E72-CD20F7406CD2/libunwindstack.so 
+[123] A2594C7E-7212-23C3-717C-A6D8EBA60E79 0x0000007aa1442000 /home/polka/.lldb/module_cache/remote-android/.cache/A2594C7E-7212-23C3-717C-A6D8EBA60E79/libdexfile.so 
+[124] BD9AB15D-45D1-EEA9-E10C-A2364E953272 0x0000007aa0d0c000 /home/polka/.lldb/module_cache/remote-android/.cache/BD9AB15D-45D1-EEA9-E10C-A2364E953272/libstdc++.so 
+[125] 030866C7-8341-000D-5412-60BB391C9BB6 0x0000007aa05dd000 /home/polka/.lldb/module_cache/remote-android/.cache/030866C7-8341-000D-5412-60BB391C9BB6/libspeexresampler.so 
+[126] 86DD74E7-9B13-2B6F-1009-9BA3846F72CF 0x0000007aa1310000 /home/polka/.lldb/module_cache/remote-android/.cache/86DD74E7-9B13-2B6F-1009-9BA3846F72CF/android.hidl.memory.token@1.0.so 
+[127] B044F9C7-344E-216A-01F5-03291E6F80CE 0x0000007aa1056000 /home/polka/.lldb/module_cache/remote-android/.cache/B044F9C7-344E-216A-01F5-03291E6F80CE/android.hardware.cas@1.0.so 
+[128] 59C120B1-70AB-4B67-C64F-6D39A17E417E 0x0000007aa13f3000 /home/polka/.lldb/module_cache/remote-android/.cache/59C120B1-70AB-4B67-C64F-6D39A17E417E/liblzma.so 
+[129] 1E4A7A11-B95D-7088-7B63-A5BDDFD088EA 0x0000007a2025e000 /home/polka/.lldb/module_cache/remote-android/.cache/1E4A7A11-B95D-7088-7B63-A5BDDFD088EA/libavenhancements.so 
+[130] 9028A27A 0x0000007a1f9ca000 /home/polka/.lldb/module_cache/remote-android/.cache/9028A27A/libstagefright_httplive.so 
+[131] 0DDDF350 0x0000007a1fc51000 /home/polka/.lldb/module_cache/remote-android/.cache/0DDDF350/libmediaplayerservice.so 
+[132] 31038824 0x0000007a1fba6000 /home/polka/.lldb/module_cache/remote-android/.cache/31038824/libstagefright_omx.so 
+[133] 7641FFE8-9447-6CEE-DC3A-6134D83552C7 0x0000007a1fb0e000 /home/polka/.lldb/module_cache/remote-android/.cache/7641FFE8-9447-6CEE-DC3A-6134D83552C7/libmediadrm.so 
+[134] 686E8616-7F7D-A487-C10F-5A30E21A313E 0x0000007a1fa91000 /home/polka/.lldb/module_cache/remote-android/.cache/686E8616-7F7D-A487-C10F-5A30E21A313E/libpowermanager.so 
+[135] A68866B9 0x0000007aa60c0000 /home/polka/.lldb/module_cache/remote-android/.cache/A68866B9/libstagefright_bufferqueue_helper.so 
+[136] 731E6A39-0686-B8F7-D0CD-8639CAEB0E7B 0x0000007a1fac0000 /home/polka/.lldb/module_cache/remote-android/.cache/731E6A39-0686-B8F7-D0CD-8639CAEB0E7B/libmediadrmmetrics_lite.so 
+[137] E56C8703-6755-595A-F8DC-4E90FE2DB062 0x0000007a1f94a000 /home/polka/.lldb/module_cache/remote-android/.cache/E56C8703-6755-595A-F8DC-4E90FE2DB062/android.hardware.drm@1.0.so 
+[138] 7AD7B232-CE86-0A47-71E9-212BB27F251D 0x0000007a202db000 /home/polka/.lldb/module_cache/remote-android/.cache/7AD7B232-CE86-0A47-71E9-212BB27F251D/android.hardware.drm@1.1.so 
+[139] 5F95CDFF-154C-3C5A-509E-19E741D451B6 0x0000007a1f2c6000 /home/polka/.lldb/module_cache/remote-android/.cache/5F95CDFF-154C-3C5A-509E-19E741D451B6/libart.so 
+[140] DB26196F-6227-569C-36C7-91332C7717BF 0x0000007a1f246000 /home/polka/.lldb/module_cache/remote-android/.cache/DB26196F-6227-569C-36C7-91332C7717BF/liblz4.so 
+[141] 68A0ECB4-7F78-AF6E-F94A-053DF710F8C1 0x0000007a1f206000 /home/polka/.lldb/module_cache/remote-android/.cache/68A0ECB4-7F78-AF6E-F94A-053DF710F8C1/libmetricslogger.so 
+[142] D2C0E359-05EF-7771-A81E-811BE353A050 0x0000007a1f909000 /home/polka/.lldb/module_cache/remote-android/.cache/D2C0E359-05EF-7771-A81E-811BE353A050/libtombstoned_client.so 
+[143] A4F10DD5-3616-AB14-EFF2-652E8FF42B59 0x0000007a1f28c000 /home/polka/.lldb/module_cache/remote-android/.cache/A4F10DD5-3616-AB14-EFF2-652E8FF42B59/libsigchain.so 
+[144] 5270BF98-2961-25CF-F0F5-433423636822-06BAF2FB 0x0000000070d4c000 /home/polka/.lldb/module_cache/remote-android/.cache/5270BF98-2961-25CF-F0F5-433423636822-06BAF2FB/boot.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/5270BF98-2961-25CF-F0F5-433423636822-06BAF2FB/boot.oat.sym
+[145] 29C7E1E1-3A59-56B6-5D9E-4BE684259130-E59C2E48 0x0000000070d58000 /home/polka/.lldb/module_cache/remote-android/.cache/29C7E1E1-3A59-56B6-5D9E-4BE684259130-E59C2E48/boot-com.qualcomm.qti.camera.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/29C7E1E1-3A59-56B6-5D9E-4BE684259130-E59C2E48/boot-com.qualcomm.qti.camera.oat.sym
+[146] CFBA5C9E-F4CC-977C-CD9B-B9769905E2A4-0FD11211 0x0000000070d60000 /home/polka/.lldb/module_cache/remote-android/.cache/CFBA5C9E-F4CC-977C-CD9B-B9769905E2A4-0FD11211/boot-QPerformance.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/CFBA5C9E-F4CC-977C-CD9B-B9769905E2A4-0FD11211/boot-QPerformance.oat.sym
+[147] 9F6191F8-E3C9-5DE1-7E25-CC6045EA8FEB-92601277 0x0000000070d6a000 /home/polka/.lldb/module_cache/remote-android/.cache/9F6191F8-E3C9-5DE1-7E25-CC6045EA8FEB-92601277/boot-UxPerformance.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/9F6191F8-E3C9-5DE1-7E25-CC6045EA8FEB-92601277/boot-UxPerformance.oat.sym
+[148] 57A13F49-BA50-F8E4-C73C-A55F2C37D966-13B66462 0x0000000070d73000 /home/polka/.lldb/module_cache/remote-android/.cache/57A13F49-BA50-F8E4-C73C-A55F2C37D966-13B66462/boot-core-oj.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/57A13F49-BA50-F8E4-C73C-A55F2C37D966-13B66462/boot-core-oj.oat.sym
+[149] 8B26786E-183E-FE99-9BE8-920934C484B9-7FC4486D 0x0000000071644000 /home/polka/.lldb/module_cache/remote-android/.cache/8B26786E-183E-FE99-9BE8-920934C484B9-7FC4486D/boot-core-libart.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/8B26786E-183E-FE99-9BE8-920934C484B9-7FC4486D/boot-core-libart.oat.sym
+[150] BB443866-5BAD-B643-E683-776E80F8210A-04C91DB0 0x0000000071b07000 /home/polka/.lldb/module_cache/remote-android/.cache/BB443866-5BAD-B643-E683-776E80F8210A-04C91DB0/boot-conscrypt.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/BB443866-5BAD-B643-E683-776E80F8210A-04C91DB0/boot-conscrypt.oat.sym
+[151] B8E0D641-FB0F-9401-E2F5-D01F805FD9A9-3A1D2096 0x0000000071bb4000 /home/polka/.lldb/module_cache/remote-android/.cache/B8E0D641-FB0F-9401-E2F5-D01F805FD9A9-3A1D2096/boot-okhttp.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/B8E0D641-FB0F-9401-E2F5-D01F805FD9A9-3A1D2096/boot-okhttp.oat.sym
+[152] 4FED344E-3843-52DD-32A5-515B4109767C-545C0AD6 0x0000000071c74000 /home/polka/.lldb/module_cache/remote-android/.cache/4FED344E-3843-52DD-32A5-515B4109767C-545C0AD6/boot-bouncycastle.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/4FED344E-3843-52DD-32A5-515B4109767C-545C0AD6/boot-bouncycastle.oat.sym
+[153] 9A4C29B8-1B86-AD60-6BC7-3EA0B13B376C-C80D2698 0x0000000071e12000 /home/polka/.lldb/module_cache/remote-android/.cache/9A4C29B8-1B86-AD60-6BC7-3EA0B13B376C-C80D2698/boot-apache-xml.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/9A4C29B8-1B86-AD60-6BC7-3EA0B13B376C-C80D2698/boot-apache-xml.oat.sym
+[154] 14F75798-BE23-32EE-551C-9EFDFFB7840E-5BF281D6 0x0000000071f5f000 /home/polka/.lldb/module_cache/remote-android/.cache/14F75798-BE23-32EE-551C-9EFDFFB7840E-5BF281D6/boot-ext.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/14F75798-BE23-32EE-551C-9EFDFFB7840E-5BF281D6/boot-ext.oat.sym
+[155] F93DDA5E-D72A-4507-48FB-FE69F38A89FF-37D35283 0x0000000072078000 /home/polka/.lldb/module_cache/remote-android/.cache/F93DDA5E-D72A-4507-48FB-FE69F38A89FF-37D35283/boot-framework.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/F93DDA5E-D72A-4507-48FB-FE69F38A89FF-37D35283/boot-framework.oat.sym
+[156] 43E29B78-F861-401A-373C-A07981F7C09D-8FE99CFB 0x0000000074378000 /home/polka/.lldb/module_cache/remote-android/.cache/43E29B78-F861-401A-373C-A07981F7C09D-8FE99CFB/boot-telephony-common.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/43E29B78-F861-401A-373C-A07981F7C09D-8FE99CFB/boot-telephony-common.oat.sym
+[157] 0687B4DD-F7C5-D766-0B83-06407426B2EC-2E677006 0x0000000074866000 /home/polka/.lldb/module_cache/remote-android/.cache/0687B4DD-F7C5-D766-0B83-06407426B2EC-2E677006/boot-voip-common.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/0687B4DD-F7C5-D766-0B83-06407426B2EC-2E677006/boot-voip-common.oat.sym
+[158] 0D966718-C355-9701-5C37-A0FAE5B35879-0EAF951C 0x0000000074894000 /home/polka/.lldb/module_cache/remote-android/.cache/0D966718-C355-9701-5C37-A0FAE5B35879-0EAF951C/boot-ims-common.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/0D966718-C355-9701-5C37-A0FAE5B35879-0EAF951C/boot-ims-common.oat.sym
+[159] D89B0695-48D5-27C4-5307-B218D6A6197F-5F3BBB7B 0x00000000748d3000 /home/polka/.lldb/module_cache/remote-android/.cache/D89B0695-48D5-27C4-5307-B218D6A6197F-5F3BBB7B/boot-android.hidl.base-V1.0-java.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/D89B0695-48D5-27C4-5307-B218D6A6197F-5F3BBB7B/boot-android.hidl.base-V1.0-java.oat.sym
+[160] DC1193E2-D26B-0D59-AABE-7FE4CC72DB74-52F2F499 0x00000000748dd000 /home/polka/.lldb/module_cache/remote-android/.cache/DC1193E2-D26B-0D59-AABE-7FE4CC72DB74-52F2F499/boot-android.hidl.manager-V1.0-java.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/DC1193E2-D26B-0D59-AABE-7FE4CC72DB74-52F2F499/boot-android.hidl.manager-V1.0-java.oat.sym
+[161] 0B9576E8-E1F7-A698-0E88-ED4DB15CEEAA-3048D129 0x00000000748ed000 /home/polka/.lldb/module_cache/remote-android/.cache/0B9576E8-E1F7-A698-0E88-ED4DB15CEEAA-3048D129/boot-framework-oahl-backward-compatibility.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/0B9576E8-E1F7-A698-0E88-ED4DB15CEEAA-3048D129/boot-framework-oahl-backward-compatibility.oat.sym
+[162] A430A174-D8F6-DE54-9E90-414FBC6BC3B2-EE44ECCD 0x00000000748f5000 /home/polka/.lldb/module_cache/remote-android/.cache/A430A174-D8F6-DE54-9E90-414FBC6BC3B2-EE44ECCD/boot-android.test.base.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/A430A174-D8F6-DE54-9E90-414FBC6BC3B2-EE44ECCD/boot-android.test.base.oat.sym
+[163] 81838FF6-73F2-01EE-00CE-347FE47BDF5B-55926000 0x0000000074904000 /home/polka/.lldb/module_cache/remote-android/.cache/81838FF6-73F2-01EE-00CE-347FE47BDF5B-55926000/boot-oneplus_sdk_utils.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/81838FF6-73F2-01EE-00CE-347FE47BDF5B-55926000/boot-oneplus_sdk_utils.oat.sym
+[164] 34D6A65B-B02D-D1AC-4525-DB9DD39136B3-65186062 0x000000007490e000 /home/polka/.lldb/module_cache/remote-android/.cache/34D6A65B-B02D-D1AC-4525-DB9DD39136B3-65186062/boot-oneplus_sdk_wrapper.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/34D6A65B-B02D-D1AC-4525-DB9DD39136B3-65186062/boot-oneplus_sdk_wrapper.oat.sym
+[165] 1EC5FDAC-7E20-10A7-A67A-8AA3DDED3CC2-7EBF7A63 0x0000000074916000 /home/polka/.lldb/module_cache/remote-android/.cache/1EC5FDAC-7E20-10A7-A67A-8AA3DDED3CC2-7EBF7A63/boot-com.nxp.nfc.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/1EC5FDAC-7E20-10A7-A67A-8AA3DDED3CC2-7EBF7A63/boot-com.nxp.nfc.oat.sym
+[166] FB64A9A7-14E9-D155-E073-7FEABDC1CA2E-38E3B055 0x000000007493a000 /home/polka/.lldb/module_cache/remote-android/.cache/FB64A9A7-14E9-D155-E073-7FEABDC1CA2E-38E3B055/boot-tcmiface.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/FB64A9A7-14E9-D155-E073-7FEABDC1CA2E-38E3B055/boot-tcmiface.oat.sym
+[167] 0D210957-F7B4-6245-7520-9138A719F427-20E8C7BF 0x0000000074942000 /home/polka/.lldb/module_cache/remote-android/.cache/0D210957-F7B4-6245-7520-9138A719F427-20E8C7BF/boot-telephony-ext.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/0D210957-F7B4-6245-7520-9138A719F427-20E8C7BF/boot-telephony-ext.oat.sym
+[168] A2021A01-8A6D-5DFF-D0DA-DF57D8F1236E-B51B8636 0x000000007494f000 /home/polka/.lldb/module_cache/remote-android/.cache/A2021A01-8A6D-5DFF-D0DA-DF57D8F1236E-B51B8636/boot-qcnvitems.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/A2021A01-8A6D-5DFF-D0DA-DF57D8F1236E-B51B8636/boot-qcnvitems.oat.sym
+[169] C677913B-DEA2-A6FC-5045-7D16A4CBD830-6107B49D 0x0000000074974000 /home/polka/.lldb/module_cache/remote-android/.cache/C677913B-DEA2-A6FC-5045-7D16A4CBD830-6107B49D/boot-qcrilhook.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/C677913B-DEA2-A6FC-5045-7D16A4CBD830-6107B49D/boot-qcrilhook.oat.sym
+[170] E5B3B320-6FF7-479F-4BE0-49FCC421513D-8C5D7BB7 0x00000000749a4000 /home/polka/.lldb/module_cache/remote-android/.cache/E5B3B320-6FF7-479F-4BE0-49FCC421513D-8C5D7BB7/boot-WfdCommon.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/E5B3B320-6FF7-479F-4BE0-49FCC421513D-8C5D7BB7/boot-WfdCommon.oat.sym
+[171] 6A625B8E-09F1-A9A6-6A6F-DC8E43C1FF15-23261F74 0x00000000749c2000 /home/polka/.lldb/module_cache/remote-android/.cache/6A625B8E-09F1-A9A6-6A6F-DC8E43C1FF15-23261F74/boot-oem-services.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/6A625B8E-09F1-A9A6-6A6F-DC8E43C1FF15-23261F74/boot-oem-services.oat.sym
+[172] AD1E4B33-1799-D520-1970-55E0D31172EA-373E721A 0x00000000749ca000 /home/polka/.lldb/module_cache/remote-android/.cache/AD1E4B33-1799-D520-1970-55E0D31172EA-373E721A/boot-wapicertstore.oat 
+      /home/polka/.lldb/module_cache/remote-android/.cache/AD1E4B33-1799-D520-1970-55E0D31172EA-373E721A/boot-wapicertstore.oat.sym
+[173] 2038FCEC-B74E-FC0C-4871-769A746AD41A 0x0000007a1bf04000 /home/polka/.lldb/module_cache/remote-android/.cache/2038FCEC-B74E-FC0C-4871-769A746AD41A/libadbconnection.so 
+[174] 7722CF55-3E0A-FC1C-BCE3-376F71F243FC 0x0000007a1bed2000 /home/polka/.lldb/module_cache/remote-android/.cache/7722CF55-3E0A-FC1C-BCE3-376F71F243FC/libandroid.so 
+[175] 055DAB9C 0x0000007a1be5d000 /home/polka/.lldb/module_cache/remote-android/.cache/055DAB9C/libaaudio.so 
+[176] A6BA343C 0x0000007a1be07000 /home/polka/.lldb/module_cache/remote-android/.cache/A6BA343C/libcamera2ndk.so 
+[177] 3B926612 0x0000007a1bcc2000 /home/polka/.lldb/module_cache/remote-android/.cache/3B926612/libmediandk.so 
+[178] 4E1B46C9-6EE4-3427-37F0-2D8982308C73 0x0000007a1bba0000 /home/polka/.lldb/module_cache/remote-android/.cache/4E1B46C9-6EE4-3427-37F0-2D8982308C73/libmedia_jni.so 
+[179] 0C32045A-1D26-932C-2793-6CEA28BFABEF 0x0000007a1bd45000 /home/polka/.lldb/module_cache/remote-android/.cache/0C32045A-1D26-932C-2793-6CEA28BFABEF/libmidi.so 
+[180] DEFB8ADA 0x0000007a1bc4e000 /home/polka/.lldb/module_cache/remote-android/.cache/DEFB8ADA/libmtp.so 
+[181] F7FE0068-6E08-C709-CCC5-7CE7F2748D07 0x0000007a1bd93000 /home/polka/.lldb/module_cache/remote-android/.cache/F7FE0068-6E08-C709-CCC5-7CE7F2748D07/libexif.so 
+[182] 0E8200C6-880B-E41D-6040-FE045726469A 0x0000007a1bd00000 /home/polka/.lldb/module_cache/remote-android/.cache/0E8200C6-880B-E41D-6040-FE045726469A/libasyncio.so 
+[183] 1152C723-0E1C-7EA0-AD40-69E40C065C90 0x0000007a1bb43000 /home/polka/.lldb/module_cache/remote-android/.cache/1152C723-0E1C-7EA0-AD40-69E40C065C90/libGLESv3.so 
+[184] 9270F4FD-0346-53F9-FA4D-8D7AF76D6E22 0x0000007a1bb0b000 /home/polka/.lldb/module_cache/remote-android/.cache/9270F4FD-0346-53F9-FA4D-8D7AF76D6E22/libjnigraphics.so 
+[185] B35BDF75-41BC-C986-A1AD-F58DC88EE652 0x0000007a1b746000 /home/polka/.lldb/module_cache/remote-android/.cache/B35BDF75-41BC-C986-A1AD-F58DC88EE652/libneuralnetworks.so 
+[186] 050D9BF6-23AE-9A39-102B-3844B665C9E1 0x0000007a1ba1e000 /home/polka/.lldb/module_cache/remote-android/.cache/050D9BF6-23AE-9A39-102B-3844B665C9E1/libtextclassifier_hash.so 
+[187] A0B5CFD2-EE49-183B-9215-8614C347A4F2 0x0000007a1ba8d000 /home/polka/.lldb/module_cache/remote-android/.cache/A0B5CFD2-EE49-183B-9215-8614C347A4F2/android.hardware.neuralnetworks@1.0.so 
+[188] 9A0D283D-2ED7-52DB-FF94-3C8C45EFDAA0 0x0000007a1ba41000 /home/polka/.lldb/module_cache/remote-android/.cache/9A0D283D-2ED7-52DB-FF94-3C8C45EFDAA0/android.hardware.neuralnetworks@1.1.so 
+[189] CEC5396F-DA04-4DDC-4A8D-2D5D624AA24D 0x0000007a1b71f000 /home/polka/.lldb/module_cache/remote-android/.cache/CEC5396F-DA04-4DDC-4A8D-2D5D624AA24D/libOpenMAXAL.so 
+[190] C06E5D75-061D-2634-11AD-5A3A1B44AF84 0x0000007a1b6cd000 /home/polka/.lldb/module_cache/remote-android/.cache/C06E5D75-061D-2634-11AD-5A3A1B44AF84/libOpenSLES.so 
+[191] BF3F8F74-F2A3-96BC-8CE3-8FBFF1202C6C 0x0000007a1b60d000 /home/polka/.lldb/module_cache/remote-android/.cache/BF3F8F74-F2A3-96BC-8CE3-8FBFF1202C6C/libRS.so 
+[192] 27F9A1B1-CA18-40F6-FCAE-F4D9291967BB 0x0000007a1b654000 /home/polka/.lldb/module_cache/remote-android/.cache/27F9A1B1-CA18-40F6-FCAE-F4D9291967BB/android.hardware.renderscript@1.0.so 
+[193] 5AB5F68C-E179-C188-D754-14A23F9883DB 0x0000007a1b5c0000 /home/polka/.lldb/module_cache/remote-android/.cache/5AB5F68C-E179-C188-D754-14A23F9883DB/libwebviewchromium_plat_support.so 
+[194] 425D03BA-7D4F-3728-94B3-EE48CDE1FADF 0x0000007a1b55b000 /home/polka/.lldb/module_cache/remote-android/.cache/425D03BA-7D4F-3728-94B3-EE48CDE1FADF/libjavacore.so 
+[195] 32E0B332-42B8-274E-087C-29404F70BD89 0x0000007a19de6000 /home/polka/.lldb/module_cache/remote-android/.cache/32E0B332-42B8-274E-087C-29404F70BD89/libopenjdk.so 
+[196] 2F17F2EC-8B93-A013-D9CA-AE8A47CE14B4 0x0000007a19d13000 /home/polka/.lldb/module_cache/remote-android/.cache/2F17F2EC-8B93-A013-D9CA-AE8A47CE14B4/libssl.so 
+[197] 48376FD5-52EC-3890-AE75-84E1707BAA16 0x0000007a19d8a000 /home/polka/.lldb/module_cache/remote-android/.cache/48376FD5-52EC-3890-AE75-84E1707BAA16/libopenjdkjvm.so 
+[198] A6E0BCE3-CC1F-4B0E-7CCB-80516BE078C1 0x0000007a199e2000 /home/polka/.lldb/module_cache/remote-android/.cache/A6E0BCE3-CC1F-4B0E-7CCB-80516BE078C1/libart-compiler.so 
+[199] F56B5E5C-237E-B1FC-32DD-C74930006A05 0x0000007a19786000 /home/polka/.lldb/module_cache/remote-android/.cache/F56B5E5C-237E-B1FC-32DD-C74930006A05/libvixl-arm.so 
+[200] 1337E76D-5E7B-89F7-72E8-FFB3AD9F73A1 0x0000007a198c7000 /home/polka/.lldb/module_cache/remote-android/.cache/1337E76D-5E7B-89F7-72E8-FFB3AD9F73A1/libvixl-arm64.so 
+[201] 33921111-AC1E-43A7-7479-5CC94B93D1D9 0x0000007a19053000 /home/polka/.lldb/module_cache/remote-android/.cache/33921111-AC1E-43A7-7479-5CC94B93D1D9/libqti-at.so 
+[202] 6D597935-524F-672C-63F6-36C98900CE55 0x0000007a18e8d000 /home/polka/.lldb/module_cache/remote-android/.cache/6D597935-524F-672C-63F6-36C98900CE55/libxml2.so 
+[203] 07116828-D3FB-8DDF-EBF2-8021A90C187A 0x0000007a18e53000 /home/polka/.lldb/module_cache/remote-android/.cache/07116828-D3FB-8DDF-EBF2-8021A90C187A/libqti-util_system.so 
+[204] 1E52AC2A-3358-0AF6-C6F5-EB04652FC0A3 0x0000007a19017000 /home/polka/.lldb/module_cache/remote-android/.cache/1E52AC2A-3358-0AF6-C6F5-EB04652FC0A3/libqti-perfd-client_system.so 
+[205] 0B92E204-ED3B-7A9E-3F34-CD28F083A1A9 0x0000007a19090000 /home/polka/.lldb/module_cache/remote-android/.cache/0B92E204-ED3B-7A9E-3F34-CD28F083A1A9/vendor.qti.hardware.perf@1.0.so 
+[206] 25A191FE-A9C9-0EE7-B823-1F53918D51C7 0x0000007a10d5c000 /home/polka/.lldb/module_cache/remote-android/.cache/25A191FE-A9C9-0EE7-B823-1F53918D51C7/libsoundpool.so 
+[207] 7AFD1BBE-3CB7-744C-67BE-1FE1802E9B50 0x0000007a10cd8000 /home/polka/.lldb/module_cache/remote-android/.cache/7AFD1BBE-3CB7-744C-67BE-1FE1802E9B50/libjavacrypto.so 
+[208] F2D50CAB-89DE-3F7C-AF34-91627A73BAE2 0x0000007a0fa0e000 /home/polka/.lldb/module_cache/remote-android/.cache/F2D50CAB-89DE-3F7C-AF34-91627A73BAE2/android.hardware.graphics.mapper@2.0-impl.so 
+[209] 3FBA4E7E-3D12-132B-6B73-7CF4239BF914 0x0000007a0f98e000 /home/polka/.lldb/module_cache/remote-android/.cache/3FBA4E7E-3D12-132B-6B73-7CF4239BF914/android.hardware.graphics.mapper@2.0.so 
+[210] 2C5A7C89-C7DE-A21A-ACEB-8ACCBE8A3EBF 0x0000007a0f796000 /home/polka/.lldb/module_cache/remote-android/.cache/2C5A7C89-C7DE-A21A-ACEB-8ACCBE8A3EBF/android.hardware.graphics.common@1.0.so 
+[211] B8A81BA2-CBB0-0CF5-1D27-CA7E059CCA83 0x0000007a0f8c6000 /home/polka/.lldb/module_cache/remote-android/.cache/B8A81BA2-CBB0-0CF5-1D27-CA7E059CCA83/libhidlbase.so 
+[212] 3C8DEE3A-7852-4657-6607-DDEC26BFF0CD 0x0000007a0f707000 /home/polka/.lldb/module_cache/remote-android/.cache/3C8DEE3A-7852-4657-6607-DDEC26BFF0CD/libhidltransport.so 
+[213] B63116FC 0x0000007a0f9c8000 /home/polka/.lldb/module_cache/remote-android/.cache/B63116FC/libhwbinder.so 
+[214] 409FB954-CADE-F3C4-95C1-C11A4CAF7322 0x0000007a0f90f000 /home/polka/.lldb/module_cache/remote-android/.cache/409FB954-CADE-F3C4-95C1-C11A4CAF7322/libutils.so 
+[215] 1A96D01B-E63A-7F2C-B507-81B606D9E77F 0x0000007a0f6c4000 /home/polka/.lldb/module_cache/remote-android/.cache/1A96D01B-E63A-7F2C-B507-81B606D9E77F/libcutils.so 
+[216] 8E1D5C5F-C5B0-88A0-4C74-40A29B353C2F 0x0000007a0f7c2000 /home/polka/.lldb/module_cache/remote-android/.cache/8E1D5C5F-C5B0-88A0-4C74-40A29B353C2F/libc++.so 
+[217] B0E4C124-699F-55DF-F802-2153162C39D9 0x0000007a0fa43000 /home/polka/.lldb/module_cache/remote-android/.cache/B0E4C124-699F-55DF-F802-2153162C39D9/libbase.so 
+[218] 36EF3280-2F74-4F73-53B2-4F6CA910353F 0x0000007a0f942000 /home/polka/.lldb/module_cache/remote-android/.cache/36EF3280-2F74-4F73-53B2-4F6CA910353F/libhardware.so 
+[219] B0197D2A 0x0000007a0f683000 /home/polka/.lldb/module_cache/remote-android/.cache/B0197D2A/libEGL_adreno.so 
+[220] 745C3594 0x0000007a0f64c000 /home/polka/.lldb/module_cache/remote-android/.cache/745C3594/libadreno_utils.so 
+[221] C2C3EDD6 0x0000007a0f48b000 /home/polka/.lldb/module_cache/remote-android/.cache/C2C3EDD6/libgsl.so 
+[222] 074672BE-E589-8401-AAD7-75625A4CAB27 0x0000007a0f60d000 /home/polka/.lldb/module_cache/remote-android/.cache/074672BE-E589-8401-AAD7-75625A4CAB27/libz.so 
+[223] 6201EFE8 0x0000007a0f442000 /home/polka/.lldb/module_cache/remote-android/.cache/6201EFE8/libGLESv1_CM_adreno.so 
+[224] 0497365D 0x0000007a0ef48000 /home/polka/.lldb/module_cache/remote-android/.cache/0497365D/libGLESv2_adreno.so 
+[225] C870A764-799B-76B4-CDB4-1A6B96C3B56E 0x0000007a0e00f000 /home/polka/.lldb/module_cache/remote-android/.cache/C870A764-799B-76B4-CDB4-1A6B96C3B56E/libllvm-glnext.so 
+[226] 67E82478 0x0000007a0f422000 /home/polka/.lldb/module_cache/remote-android/.cache/67E82478/eglSubDriverAndroid.so 
+[227] 661F1C1A-B356-3F28-C8DF-CAF4D5B36444 0x0000007a0df47000 /home/polka/.lldb/module_cache/remote-android/.cache/661F1C1A-B356-3F28-C8DF-CAF4D5B36444/libcompiler_rt.so 
+[228] 159A67B0-E691-E4DB-12C2-6DBB7CE24EB9 0x0000007a0df0d000 /home/polka/.lldb/module_cache/remote-android/.cache/159A67B0-E691-E4DB-12C2-6DBB7CE24EB9/libwebviewchromium_loader.so 
+[229] 49FB315B-E25C-E1E9-BD5A-EDF95C3303F8-1698B82E 0x0000007a05f8c000 /home/polka/.lldb/module_cache/remote-android/.cache/49FB315B-E25C-E1E9-BD5A-EDF95C3303F8-1698B82E/embryo.odex 
+      /home/polka/.lldb/module_cache/remote-android/.cache/49FB315B-E25C-E1E9-BD5A-EDF95C3303F8-1698B82E/embryo.odex.sym
+[230] 22755DC0-0CA8-366E-07AF-2B0CCA40E74D-7BCB3577 0x0000007a05f56000 /home/polka/.lldb/module_cache/remote-android/.cache/22755DC0-0CA8-366E-07AF-2B0CCA40E74D-7BCB3577/android.test.mock.odex 
+      /home/polka/.lldb/module_cache/remote-android/.cache/22755DC0-0CA8-366E-07AF-2B0CCA40E74D-7BCB3577/android.test.mock.odex.sym
+[231] ABDA897A-9E2C-E385-8B02-C7CA1AA00102-FE3C184A 0x0000007a05d91000 /home/polka/.lldb/module_cache/remote-android/.cache/ABDA897A-9E2C-E385-8B02-C7CA1AA00102-FE3C184A/org.apache.http.legacy.boot.odex 
+      /home/polka/.lldb/module_cache/remote-android/.cache/ABDA897A-9E2C-E385-8B02-C7CA1AA00102-FE3C184A/org.apache.http.legacy.boot.odex.sym
+[232] 4B4A550C-3EF1-693C-581B-03EDA8FF65A5-CDB97BA9 0x0000007a05d5c000 /home/polka/.lldb/module_cache/remote-android/.cache/4B4A550C-3EF1-693C-581B-03EDA8FF65A5-CDB97BA9/android.test.runner.odex 
+      /home/polka/.lldb/module_cache/remote-android/.cache/4B4A550C-3EF1-693C-581B-03EDA8FF65A5-CDB97BA9/android.test.runner.odex.sym
+[233] 70D04C0B 0x00000079fb992000 /data/app/com.zhiliaoapp.musically-H56ldDWhbvT6pJYMYIuUjA==/oat/arm64/base.odex (0x00000079fb992000)
+[234] 4703E5CC-5CE8-159E-43FC-697BCF2F8551 0x00000079f6c50000 /home/polka/.lldb/module_cache/remote-android/.cache/4703E5CC-5CE8-159E-43FC-697BCF2F8551/libqti_performance.so 
+[235] 46A38321-C072-51FD-6B9C-1B6E6140D24E 0x00000079f6c10000 /home/polka/.lldb/module_cache/remote-android/.cache/46A38321-C072-51FD-6B9C-1B6E6140D24E/vendor.qti.hardware.iop@2.0.so 
+[236] 006E6155-6EE7-9B23-40DE-01CD02D9A81F-F49690E2 0x00000079f684b000 /home/polka/.lldb/module_cache/remote-android/.cache/006E6155-6EE7-9B23-40DE-01CD02D9A81F-F49690E2/libjato.so 
+[237] F32F22E0-0070-510C-C1FA-315F268C0550-15611D3B 0x00000079f682f000 /home/polka/.lldb/module_cache/remote-android/.cache/F32F22E0-0070-510C-C1FA-315F268C0550-15611D3B/libnpth_dl.so 
+[238] 44167D57-240D-FBAA-B4EA-3578C2055549-83206EBC 0x00000079f6781000 /home/polka/.lldb/module_cache/remote-android/.cache/44167D57-240D-FBAA-B4EA-3578C2055549-83206EBC/libbytehook.so 
+[239] 8EDE233E-94C7-BE14-8118-8751CF78EAC5-A6C10B08 0x00000079f6751000 /home/polka/.lldb/module_cache/remote-android/.cache/8EDE233E-94C7-BE14-8118-8751CF78EAC5-A6C10B08/libart_sym.so 
+[240] 79756BA3-599A-6FC0-9BE3-9828B4327658-C7B0C4F1 0x00000079f68a3000 /home/polka/.lldb/module_cache/remote-android/.cache/79756BA3-599A-6FC0-9BE3-9828B4327658-C7B0C4F1/libshadowhook.so 
+[241] 31ABEBC1-B564-ADD5-4FE4-3B52CE69ACAC-326BE4FE 0x00000079f68d7000 /home/polka/.lldb/module_cache/remote-android/.cache/31ABEBC1-B564-ADD5-4FE4-3B52CE69ACAC-326BE4FE/libc++_shared.so 
+[242] 6CC5CC47-9968-B7EB-D68A-671284F4F74F-B2F2A99F 0x00000079f64cd000 /home/polka/.lldb/module_cache/remote-android/.cache/6CC5CC47-9968-B7EB-D68A-671284F4F74F-B2F2A99F/libkeva.so 
+[243] D3D7524C-80A9-8FD4-B28D-90BFC96F6EFC-7A87F10C 0x00000079f64a5000 /home/polka/.lldb/module_cache/remote-android/.cache/D3D7524C-80A9-8FD4-B28D-90BFC96F6EFC-7A87F10C/libalog.so 
+

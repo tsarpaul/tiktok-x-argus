@@ -1,0 +1,91 @@
+2: address = libmetasec_ov.so[0x000000000009e29c], locations = 1, resolved = 1, hit count = 5 Options: disabled 
+  Names:
+    rand
+
+  2.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3247 + 12, address = 0x0000007baaee829c, resolved, hit count = 5 
+
+4: address = libmetasec_ov.so[0x000000000009dc2c], locations = 1, resolved = 1, hit count = 1 Options: disabled 
+  Names:
+    new_string
+
+  4.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3205 + 12, address = 0x0000007baaee7c2c, resolved, hit count = 1 
+
+5: address = libmetasec_ov.so[0x000000000009ec00], locations = 1, resolved = 1, hit count = 2 Options: disabled 
+  5.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3327 + 180, address = 0x0000007baaee8c00, resolved, hit count = 2 
+
+8: address = libmetasec_ov.so[0x000000000009e42c], locations = 1, resolved = 1, hit count = 2 Options: disabled 
+  Names:
+    multithread_init_shit
+
+  8.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3262 + 16, address = 0x0000007baaee842c, resolved, hit count = 2 
+
+11: address = libmetasec_ov.so[0x000000000009e1c4], locations = 1, resolved = 1, hit count = 6 Options: disabled 
+  Names:
+    struct_unpack
+
+  11.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3238 + 12, address = 0x0000007baaee81c4, resolved, hit count = 6 
+
+15: address = libmetasec_ov.so[0x000000000009ec10], locations = 1, resolved = 1, hit count = 1 Options: disabled 
+Condition: *(char*)($x21+0x17)==0x18
+
+  Names:
+    jmpback
+
+  15.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3327 + 196, address = 0x0000007baaee8c10, resolved, hit count = 1 
+
+16: address = libmetasec_ov.so[0x000000000009e8e8], locations = 1, resolved = 1, hit count = 0 Options: disabled 
+  Names:
+    mainencrypt
+
+  16.1: where = libmetasec_ov.so`___lldb_unnamed_symbol3305, address = 0x0000007baaee88e8, resolved, hit count = 0 
+
+weird_ts:
+bm 0x9e5f4 -N not_sure
+dumpit
+bm 0x9E7D4 -N hummus -C 'x/4gx $x0-0x150'
+bm 0x9e5d4 -N decrypt1
+
+85:86
+
+aes:
+bm 0x9E070 -N aes_enc
+bm 0x9DC70 -N create_md5 -C 'x/4gx $x0'
+
+loop:
+bm 0xa01a0 -N caller
+bm 0x9ec14 -N mainloop
+
+hash:
+bm 0x9DCE0 -N hash_finalize
+bm 0x9dcbc -N deref
+
+hummus:
+bm 0xd0334 -N saver1 -C 'p/x $x0'
+bm 0xd0324 -N saver2 -C 'p/x $x0'
+bm 0x9e7d4 -N humus -C 'x/30gx $x0'
+
+bm 0x9e8e8 -N mainencrypt
+bm 0x9e1c4 -N struct_unpack
+bm 0x9e42c -N multithread_init_shit
+bm 0xA027C -N chkpt
+bm 0x9f250 -N chkpt_key
+bm 0x9DF58 -N scaryjmp
+bm 0x9ec10 -N jmpback -c '*(char*)($x21+0x17)==0x18'
+bm 0x9ec10 -N jmpback -c '*(char*)(0x7ba0c96a2f)==0x18'
+bm 0x9EF84 -N change -c '*(char*)($x21+0x17)==0x18'
+
+bm 09E29C -N rand -C 'p/x $w0'
+
+wa set expr $x21+0x10
+wa modify 1 -c '*(char*)($x21+0x17)==0x18'
+
+IDEA: rewrite vmcode which will trap??
+action: trace where 0x00 leads, then last instr and check if 0x18 appears in stack :)
+
+
+timestamp integers are written at the beginning of the program.
+the edited timestamp for hummus_loop is also given at the beginning
+just guess its original timestamp minus 24
+
+
+

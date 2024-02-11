@@ -1,0 +1,211 @@
+goal:
+1. find how libsscornet speaks with libmetasec_ov.so
+2. debug those communications
+
+side goals:
+1. find a way to trace calls from other libraries into
+2. setup cluster breakpoints with -N, EXCLUDE disactivity thread.
+maybe we can get better stacktraces
+
+Tools:
+automatic command population
+
+* thread #40, name = 'DisActivityM-1', stop reason = breakpoint 860.1
+  * frame #0: 0x0000007e3bc1c000 libmetasec_ov.so`___lldb_unnamed_symbol5136 + 256
+    frame #1: 0x0000007e3bc14714 libmetasec_ov.so`___lldb_unnamed_symbol4745 + 416
+    frame #2: 0x0000007e3bc1e8a4 libmetasec_ov.so`___lldb_unnamed_symbol5314 + 252
+    frame #3: 0x0000007ef1c1dfcc libc.so`__pthread_start(void*) + 40
+    frame #4: 0x0000007ef1bb196c libc.so`__start_thread + 72
+
+commands:
+./lldb-server p --listen 0.0.0.0:10000
+b -s libmetasec_ov.so -a 0xcd000 -C "bt" --one-shot 1 --auto-continue 1
+b -s libsscronet.so -a 0x3ffdc0
+x -s4 -fx -c4 0x0000007e3bc1c130
+
+cronet:
+0x94c00
+0x95b00
+0x95100
+0x96a00
+0x2d500
+0xcc100
+0xcc600
+0x2e400
+0x3d400
+
+Used in push (notifications?) process:
+Cronet - 0x3ffdc0:
+Websocket?
+X-Cylons:
+jumps to metasec: 0x76d91a3e70->0x95e70->0x95f00->0x95f90->0x96024->0x96088->0x96094
+returns (X0): X-Cylons\r\nRcUhvFYl+rtyo3OztGWpbneU\r\n
+
+-- Useful info:
+aid=1233
+version=v04.05.00?
+secret=corp;90Xc215:sse?
+
+-- TODO:
+check cronet[0x3e88ac]
+consider debugging new threads?
+
+investigate: 0x000000737c71d954 (0x96954)
+
+functions to investigate on metasec (those with decryption):
+B9120
+
+-- ARGUS FUNCTION:
+x5 contains in wide string:
+g4dBX5jw9FAK0z6nB78ESysPhVT4PZxEJp8Fw4iJQCYIf5rhWEA9aCwZn2rPx-iuTOOB9B7wljOptTKe0dutu07HxCKyoEyl1r; msToken=Dl0g4G3hp7N3B3gZxhjr6L2uMu7TRz4ecUNxl8rHkHk9w5H7nxFjMe3ETDAQJzT01h5x6sYIfRi67E4zEeLCMtB4FKz   TmuBY1Gc3uMYE5cwkpUbS075io8KuP7Jg
+x21 contains url
+x22 contains cookies
+
+
+DEBUG FIRST BLOCK MORE THOROUGHLY!
+
+cronet req:
+0x23cb672c
+...
+0xe19414c9-->95218/**94F8C**/94A9C
+0xe6bb0864
+
+Next step:
+figure what each block does
+
+secblock:
+0x23cb672c - secblock1 (init)
+0xde6ee159 - secblock2 - does nothing
+0x7a852b69 - secblock3 - interesting
+0xa95cc278 - secblock4 - 1 minor function, doesnt seem interesting
+0xeb134a51 - secblock5 -- 21x - copying?
+0xb42a1441 - secblock6 -- 21x - copying?
+0xd44f57e1 - secblock7 -- 21x - copying?
+0xe19414c9 - secblock8 - not interesting
+0xe6bb0864 - secblock9 - does nothing
+
+headblock:
+
+0xe465c564 - headblock2 - not interesting
+0xc46808dc - headblock3 - not interesting
+0x1bc4fa5d - headblock4 - interesting
+0x2bc79262 - headblock5 - short encryption?
+0xc4baa443 - headblock6 - interesting -> creates secheaders (0x3b984)
+0x5c0b07bd - headblock7 - short encryption?
+0xc430fece - headblock8 - not interesting
+0x625cca1a - headblock9 - interesting
+0xfb5272c0 - headblock10 - not interesting
+0x8c0db5ae - headblock11 - same as headblock9
+0x796540a6 - headblock12 - not interesting
+0x8b522469 - headblock13 - same as headblock9
+0xd91b380c - headblock14 - short encryption?
+0xe01d7a61 - headblock15 - like headblock9/13 but with two func calls
+0xb1776650 - headblock16 - end
+
+setprop debug.db.uid 32767 (default null)
+
+inner_secheaders:
+0xa10fa29c - init
+0xe896558c - 1
+0x85d827c2 - 2
+0x4bcd6aac - 3
+0x76fcfb71 - 4
+0xbc9fd311 - 5
+0xe142a4ea - 6
+0x3b3f24b5 - 7
+0xb6d27258 - 8
+0x33422b18 - 9
+0x9bda97bd - 10
+0x9556e66c - 11 - main block
+0x11b22bcf
+0x4a60654b
+0x9558cd48
+0x9bfdb7e3
+0xb939795b
+0xee92f197
+0xfa874e22
+0x14e3efa1
+0x2b72a516 - 21 - 
+0x40dc9196 - 22 - registers
+0xedbdd1c2 - 23 - vital registers
+0xcf721dbe - 24 - registers
+0x7f6ae558 - 25 - important (decryption)
+0x1da9cd56 - 26 - registers
+0x402286bc - 27 - delete block
+
+blabla:
+0x8ab374d9 - init
+blabla7 - interesting, decryption?
+blabla19 + blabla20 - loop
+blabla20 - interesting a loop with strings
+TODO: finish this
+
+Interim conclusions:
+1. When researching new code, you MUST declare structs ASAP. TBD: How to track them properly during debugging.
+2. Create aliases to help you out with repetetive code, e.g. extracting the X-Argus header: 
+*(long*)(*(long*)(*(long*)(0x7cbca56ff0+0x20))+0x10)
+
+globalStruct: deref x0 (globalStruct ptr) first:
+*(long*)(*(long*)(*(long*)(*(long*)($x0)+0x20))+0x10)
+
+
+I need to find a new way to reverse this stuff.
+Maybe put breakpoints after the decryption?
+
+signkey: 2142840551?
+
+*** X-GORGON ***
+raw:
+4 byte: first 4 bytes in hex of the md5 digest of the url parameters (e.g. host=api16-core.tiktokv.com&ttl=1&aid=1233&p=android&did=7288878770684577285&f=0&cache_stale_reason=-1&cache_expire_time_delta=-1&sdk_id=0)
+8 byte: 0x00
+4 byte: 0x4050020 (0x20 0x00 0x05 0x04)
+4 byte: big endian timestamp (e.g. 0x65 0x3e 0xb8 0x00)
+
+final:
+header1(4): 8404
+header2(4): 2 random hex bytes (1st divisible by 4): 2x{random_number:02x}
+header3(4): Comes from outer thread, TBD. So far seen: 1401/1403/0000/0002
+0000 - logs/static stuff(e.g. package info)
+0002 - logs
+1401 - normal requests 
+hash(40): 
+
+I need var_230
+
+gorgon_buf:
+4a seed1 16 rand1 47 6c seed2 rand2(div_4)
+
+
+
+0x9dbec->
+1:0x9e19c->memcpy - of size 0x118 not sure the point
+2,3:0x9dc4c->new string of size 0x8
+4:0x9df50->scaryjmptbl->  input: {ptr1: idk, ptr2: url params string, ptr3: not sure if part of struct..}
+  1: 0x9e1b8 (extend url_params string)
+  2: 0x9e1e8->seems like it encrypts soemthing->scaryjmptbl->ret; x1 = ptr of url_params buf -- > ENCRYPT_AND_HASH
+  3: 0x9dc20 (new string) -> {string_obj, string_buf, size} -> creates string from encrypted buf probably
+5: 0x9e22c (string::assign) -> x1 = ptr of encrypted shit of length 0x20, assigns to $x1+0x10
+6: 0x9dd0c (string::destroy) -> x1 = old string
+7: 0x9df50->scaryjmptbl -> x1 = empty string of length 0x10
+  1: 0x9e1b8 (struct unpack)
+  2: 0x9e1e8->scaryjmptbl
+8:0x9dc20 (new string) -> {string_obj, string_buf, size}
+9:ret
+other invocations: 0x9e998/0x9dd0c
+0x9e998->decrypt_func_3->eor_thingy
+
+0x9e24c - struct unpack: *($x1+0x8)=*(*(x0)+0xd0) = 0x1f8 on my test
+0x9e1ac - string init, not sure which
+0x9e25c - debug this, seems like some mtp copying
+0x9e1dc - MTP copy of a complex struct
+0x9e270 - MTP check over 0x112800? not sure
+0x9dca4 - release str in MTP ("1233", this is also aid)
+0x9dc7c - dereference MTP (-> "1233") and place in $x1+8
+0x9e22c - string assign (1233)
+0x9e290 - rand
+
+Special Argus VM commands:
+$x22 (e.g. 0x9dbec, this is initial $x2) - external call, dynamic (ptr to this is checked)
+$x19 (frame from last call) - RET (ptr to this is checked)
+
+

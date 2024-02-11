@@ -1,0 +1,56 @@
+./data/lldb-server p --server --listen '0.0.0.0:10000'
+command script import ./setup.py
+
+b -s libmetasec_ov.so -a 03BAD0 -C 'p/x $w9' --auto-continue 1
+adb am start -n com.zhiliaoapp.musically
+setprop debug.db.uid 32767
+
+run in join_headers (x1):
+x/s *(long*)(*(long*)(*(long*)(*(long*)($sp+0x50+8)+0x20))+0x10)
+from x19<-globalstruct:
+x1 = x/s *(long*)*(long*)(*(long*)($x19)+0x20)+0x10
+and then do above, or directly:
+x/s *(long*)(*(long*)(*(long*)(*(long*)(*(long*)*(long*)(*(long*)($x19)+0x20)+0x10)+0x20))+0x10)
+
+in innersec:
+x/s *(long*)(*(long*)(*(long*)(*(long*)(*(long*)*(long*)(*(long*)(*(long*)($x19+0x38))+0x20)+0x10)+0x20))+0x10)
+
+on address:
+x/s *(long*)(*(long*)(*(long*)(*(long*)(*(long*)*(long*)(*(long*)(*(long*)($x23))+0x20)+0x10)+0x20))+0x10)
+
+$x1 in innersec:
+x/s *(long*)(*(long*)(*(long*)(*(long*)(*(long*)*(long*)(*(long*)($x1)+0x20)+0x10)+0x20))+0x10)
+$x23:
+x/s *(long*)(*(long*)(*(long*)(*(long*)(*(long*)*(long*)(*(long*)(*(long*)($x23+0x18))+0x20)+0x10)+0x20))+0x10)
+
+Get value string from headervalue:
+x/s *(long*)(*(long*)(*(long*)($x8+0x20))+0x10)
+
+In blabla (in the start this is $sp+0x28+0x2a0):
+x/s *(long*)(*(long*)(*(long*)(*(long*)(*(long*)*(long*)(*(long*)(*(long*)(*(long*)($sp+0x28)+0x18))+0x20)+0x10)+0x20))+0x10)
+
+08BA1C:
+x/s (*(long*)(*(long*)($sp+0x8)+8)+0x10)
+x/s (*(long*)(*(long*)($sp+0x8)+8)+0x10)+0x8
+
+
+
+
+
+GORGON:
+0x7b39a684c0: 0x63 0x61 0xb9 0xde 0x00 0x00 0x00 0x00
+0x7b39a684c8: 0x00 0x00 0x00 0x00 0x20 0x00 0x05 0x04
+0x7b39a684d0: 0x65 0x3e 0xe4 0xf5
+
+
+encrypt simulation:
+memory read --binary --outfile vm/key-hex *(long*)($x1) *(long*)($x1)+74*8
+memory read --binary --outfile vm/protobuf-hex *(long*)($x1+8) *(long*)($x1+8)+0x1b0
+
+
+sim dump:
+register read
+memory read --force --binary --outfile dump/stack $sp-0x10000 $sp+0x10000
+memory read --force --binary --outfile dump/libmetasec 0x7baa240000 0x7baa393ef0
+memory read --force --binary --outfile dump/x1_1 0x0000007bb01e4800 0x0000007bb01e4800+0x1000
+memory read --force --binary --outfile dump/x1_2 0x0000007bb01e4800 0x0000007bb01e4800+0x1000

@@ -1,0 +1,3375 @@
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ee14]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ee18]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ee1c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ee20]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ee24]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ee28]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ee2c]: and    w11, w14, #0x3f
+libmetasec_ov.so[0x9ee30]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ee34]: cmp    w11, #0x20
+libmetasec_ov.so[0x9ee38]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ee3c]: b.eq   0x9ef74
+libmetasec_ov.so[0x9ee40]: cmp    w11, #0x39
+libmetasec_ov.so[0x9ee44]: b.eq   0x9ef74
+libmetasec_ov.so[0x9ef74]: add    x11, x21, #0x8
+libmetasec_ov.so[0x9ef78]: ldr    x10, [x11, w10, uxtw #3]
+libmetasec_ov.so[0x9ef7c]: add    x9, x10, w9, sxth
+libmetasec_ov.so[0x9ef80]: str    x9, [x11, w8, uxtw #3]
+libmetasec_ov.so[0x9ef84]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_olibmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+c_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9efac]: and    w15, w14, #0xfff
+libmetasec_ov.so[0x9efb0]: sub    w16, w15, #0x41
+libmetasec_ov.so[0x9efb4]: ror    w17, w16, #0x6
+libmetasec_ov.so[0x9efb8]: cmp    w17, #0x3d
+libmetasec_ov.so[0x9efbc]: add    x16, x21, w9, uxtw #3
+libmetasec_ov.so[0x9efc0]: b.hi   0x9ff6c
+libmetasec_ov.so[0x9efc4]: adrp   x3, 102
+libmetasec_ov.so[0x9efc8]: add    x3, x3, #0x74a
+libmetasec_ov.so[0x9efcc]: adr    x1, #0x10
+libmetasec_ov.so[0x9efd0]: ldrh   w2, [x3, x17, lsl #1]
+libmetasec_ov.so[0x9efd4]: add    x1, x1, x2, lsl #2
+libmetasec_ov.so[0x9efd8]: br     x1
+libmetasec_ov.so[0x9f93c]: and    w11, w14, #0xfff
+libmetasec_ov.so[0x9f940]: cmp    w11, #0xc00
+libmetasec_ov.so[0x9f944]: b.gt   0x9fb94
+libmetasec_ov.so[0x9fb94]: cmp    w11, #0xc01
+libmetasec_ov.so[0x9fb98]: b.eq   0xa01e8
+libmetasec_ov.so[0xa01e8]: add    x11, x21, #0x8
+libmetasec_ov.so[0xa01ec]: ldr    x10, [x11, w10, uxtw #3]
+libmetasec_ov.so[0xa01f0]: ldr    x8, [x11, w8, uxtw #3]
+libmetasec_ov.so[0xa01f4]: orr    x8, x8, x10
+libmetasec_ov.so[0xa01f8]: str    x8, [x11, w9, uxtw #3]
+libmetasec_ov.so[0xa01fc]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14
+libmetasec_ov.so[0x9ece0]: ldrh   w13, [x20, x8, lsl #1]
+libmetasec_ov.so[0x9ece4]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9ece8]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9ecec]: br     x11
+libmetasec_ov.so[0x9f24c]: ldr    x8, [x8]
+libmetasec_ov.so[0x9f250]: str    x8, [x12, #0x8]
+libmetasec_ov.so[0x9f254]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9ed74]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ed78]: sub    w8, w8, #0x6
+libmetasec_ov.so[0x9ed7c]: cmp    w8, #0x39
+libmetasec_ov.so[0x9ed80]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ed84]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ed88]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ed8c]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ed90]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ed94]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9ed98]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ed9c]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9eda0]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9eda4]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9eda8]: adr    x11, #0x14
+libmetasec_ov.so[0x9edac]: ldrh   w13, [x24, x8, lsl #1]
+libmetasec_ov.so[0x9edb0]: add    x11, x11, x13, lsl #2
+libmetasec_ov.so[0x9edb4]: add    x8, x10, w9, sxth
+libmetasec_ov.so[0x9edb8]: br     x11
+libmetasec_ov.so[0x9f3d8]: ldr    x9, [x12, #0x8]
+libmetasec_ov.so[0x9f3dc]: str    x9, [x8]
+libmetasec_ov.so[0x9f3e0]: b      0x9f51c
+libmetasec_ov.so[0x9f51c]: ldr    x9, [x21]
+libmetasec_ov.so[0x9f520]: ldur   x8, [x23, #-0x20]
+libmetasec_ov.so[0x9f524]: add    x0, x9, #0x4
+libmetasec_ov.so[0x9f528]: cmp    x8, #0x2
+libmetasec_ov.so[0x9f52c]: str    x0, [x21]
+libmetasec_ov.so[0x9f530]: b.eq   0x9ec0c
+libmetasec_ov.so[0x9f534]: cmp    x8, #0x3
+libmetasec_ov.so[0x9f538]: b.eq   0x9ebf8
+libmetasec_ov.so[0x9f53c]: cmp    x8, #0x1
+libmetasec_ov.so[0x9f540]: b.ne   0x9ec04
+libmetasec_ov.so[0x9ec04]: cmp    x0, x22
+libmetasec_ov.so[0x9ec08]: b.eq   0xa0190
+libmetasec_ov.so[0x9ec0c]: cmp    x0, x19
+libmetasec_ov.so[0x9ec10]: b.eq   0xa05bc
+libmetasec_ov.so[0x9ec14]: cbz    x0, 0xa01b8
+libmetasec_ov.so[0x9ec18]: ldr    w14, [x0]
+libmetasec_ov.so[0x9ec1c]: ldur   x5, [x23, #-0x20]
+libmetasec_ov.so[0x9ec20]: cmp    x5, #0x2
+libmetasec_ov.so[0x9ec24]: b.eq   0xa01c0
+libmetasec_ov.so[0x9ec28]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ec2c]: cmp    w8, #0x3f
+libmetasec_ov.so[0x9ec30]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ec34]: lsr    w9, w14, #11
+libmetasec_ov.so[0x9ec38]: and    w1, w14, #0x10000000
+libmetasec_ov.so[0x9ec3c]: and    w12, w9, #0x2
+libmetasec_ov.so[0x9ec40]: and    x11, x14, #0x3f
+libmetasec_ov.so[0x9ec44]: and    w13, w9, #0x4
+libmetasec_ov.so[0x9ec48]: lsr    w7, w1, #26
+libmetasec_ov.so[0x9ec4c]: bfxil  w12, w14, #31, #1
+libmetasec_ov.so[0x9ec50]: and    w17, w14, #0x20000000
+libmetasec_ov.so[0x9ec54]: and    w6, w9, #0x8
+libmetasec_ov.so[0x9ec58]: orr    w12, w12, w13
+libmetasec_ov.so[0x9ec5c]: adr    x30, #0x4c
+libmetasec_ov.so[0x9ec60]: ldrh   w13, [x25, x11, lsl #1]
+libmetasec_ov.so[0x9ec64]: add    x30, x30, x13, lsl #2
+libmetasec_ov.so[0x9ec68]: bfxil  w7, w14, #26, #2
+libmetasec_ov.so[0x9ec6c]: ubfx   w10, w14, #21, #5
+libmetasec_ov.so[0x9ec70]: ubfx   w8, w14, #16, #5
+libmetasec_ov.so[0x9ec74]: and    w16, w14, #0x40000000
+libmetasec_ov.so[0x9ec78]: and    w9, w9, #0x10
+libmetasec_ov.so[0x9ec7c]: orr    w12, w12, w6
+libmetasec_ov.so[0x9ec80]: orr    w13, w7, w17, lsr #26
+libmetasec_ov.so[0x9ec84]: and    w15, w14, #0x80000000
+libmetasec_ov.so[0x9ec88]: and    w3, w14, #0x4000000
+libmetasec_ov.so[0x9ec8c]: and    w2, w14, #0x8000000
+libmetasec_ov.so[0x9ec90]: ubfx   w4, w14, #6, #6
+libmetasec_ov.so[0x9ec94]: add    x11, x21, w10, uxtw #3
+libmetasec_ov.so[0x9ec98]: orr    w13, w13, w16, lsr #26
+libmetasec_ov.so[0x9ec9c]: orr    w9, w12, w9
+libmetasec_ov.so[0x9eca0]: add    x12, x21, w8, uxtw #3
+libmetasec_ov.so[0x9eca4]: br     x30
+libmetasec_ov.so[0x9eca8]: and    w8, w14, #0x3f
+libmetasec_ov.so[0x9ecac]: sub    w8, w8, #0x2
+libmetasec_ov.so[0x9ecb0]: cmp    w8, #0x35
+libmetasec_ov.so[0x9ecb4]: b.hi   0x9f51c
+libmetasec_ov.so[0x9ecb8]: and    w9, w14, #0xf000
+libmetasec_ov.so[0x9ecbc]: bfxil  w9, w3, #20, #12
+libmetasec_ov.so[0x9ecc0]: orr    w9, w9, w4
+libmetasec_ov.so[0x9ecc4]: orr    w9, w9, w2, lsr #20
+libmetasec_ov.so[0x9ecc8]: ldr    x10, [x11, #0x8]
+libmetasec_ov.so[0x9eccc]: orr    w9, w9, w1, lsr #20
+libmetasec_ov.so[0x9ecd0]: orr    w9, w9, w17, lsr #20
+libmetasec_ov.so[0x9ecd4]: orr    w9, w9, w16, lsr #20
+libmetasec_ov.so[0x9ecd8]: orr    w9, w9, w15, lsr #20
+libmetasec_ov.so[0x9ecdc]: adr    x11, #0x14

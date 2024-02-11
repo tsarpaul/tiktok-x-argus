@@ -1,0 +1,40 @@
+1: 1077940818 = argus header (const)
+2: 2 = argus version (const)
+3: 1507028614 = random?
+4: {"1233"} = appId
+5: {"7288878770684577285"} = const, has to do with deviceId?
+6: {"2142840551"} = licenseId (const)
+7: {"31.5.3"} = appVersion (const)
+8: {"v04.05.00-ov-android"} = MSSDKVersion (const)
+9: 134873152 = MSSDKVersionCode
+10: {`0002000000000000`} = unknown10 (spotted being 0000000000000000)
+12: 3401036926 = ts<<1
+13: {`106e34a2b8c7`} = data_sm3
+14: {`819a5827f4ee`} = url_params_sm3
+15: {
+  1: 74 = TODO
+  4: 236 = TODO
+  5: 260 = TODO
+  6: 808 = TODO
+  7: 3401036878 = (ts^0x18)>>1??????
+}
+16: {"ApfYs27OeqO_7u_-0poFgGPMp"} = hash calculated earlier, const; I think I saw AonA5lMAipOb79vijCaYW5VMA?
+17: 3401036926 = ts<<1
+20: {"none"} = unknown20 (const)
+21: 738 = unknown21 (const)
+23: {
+  1: {"ONEPLUS A5000"} = const
+  2: 10 = ? const
+  3: {"googleplay"} = const
+  4: 413202432 = ? const
+}
+24: { = TODO
+  "MDGkG5nTpHIPLTwx1mthloTjzLwuFXB8VDV+9PcMGkmGeRfTRG05RwV1FU34eE3r3ucOIwTDwBGY80KC"
+  "T/agUArBlWKUTLIGLcR+nxJL8Xhk/sEJWu3m9HFCNincutXJZfI="
+}
+25: 8 = TODO 
+26: {
+  1: 2 = const (3rd hashed string + shift left 1?)
+  2: {`2aeaf2b21afa5009709e793c`} = hash from line 100/line 142 manipulation
+}
+28: 1008 = const

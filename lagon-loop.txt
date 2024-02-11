@@ -1,0 +1,38 @@
+0x9e290 - rand
+0x9e25c - deref and copy MTP -> ptr to "1233"
+0x9dc7c - dereference_MTP -> "1233"
+0x9dc98 - string::copy
+0x9dca4 - MTP release string
+0x9dc4c - new string size=0x28
+0x9e9e8 - string append??
+0x9dc20 - new_string
+0x9e558 - string::append2
+0x9dc60 - create_md5 - x0: "1233"+rand: 0x333332316f831820, x1: hexlify=true
+0x9dc7c - dereference_MTP
+0x9dc98 - string::copy
+0x9dca4 - MTP release string
+0x9dd0c - string::destroy
+0x9dd0c - string::destroy
+0x9dc20 - new_string
+0x9dc4c - new string size=0x28
+0x9e9fc - ladon_encryption - x0: string "1702314954-2142840551-1233" (ts-licenseId-appId), x1: output (will become 0x20), x2: md5 from line 10
+0x9ea0c - string::append -> x0 (rdm) + x1 (ladon encryption)
+0x9e944 - base64_encode - x0: string from line19
+0x9dc7c - dereference_MTP
+0x9dc98 - string::copy
+0x9dca4 - MTP release string
+0x9e19c - memcpy
+0x9e19c - memcpy
+0x9e19c - memcpy
+0x9e19c - memcpy
+0x9e804 - decrypt_func4 -> %s
+0x9e5d4 - decrypt_func1 -> X-Ladon
+0x9ea2c - sprintf
+0x9e958 - eor_thingy -> %s
+0x9ea4c - sprintf
+0x9dd0c - string::destroy
+0x9dd0c - string::destroy
+0x9dd0c - string::destroy
+0x9dd0c - string::destroy
+0x9dd0c - string::destroy
+0x9dd0c - string::destroy
